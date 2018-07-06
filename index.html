@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images</title>
+  <style>
+    .main {
+      align-items: center;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      margin: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+    .main1 {
+      text-align: center;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="main1">
+
+
+  <h3>Responsive Images</h3>
+  <p>If you'd like to start from scratch without any files, you are encouraged to do so! You learn the most by developing on your own! But, it can be a bit challenging having to start from scratch, so we do provide a starter project to use.</p>
+</div>
+  <picture class="main">
+    <source media="(min-width: 769px)" srcset="kitten-large.png">
+    <source media="(min-width: 480px)" srcset="kitten-medium.png">
+    <img src="kitten-small.png" alt="Cute kitten">
+  </picture>
+
+</body>
+
+</html>
